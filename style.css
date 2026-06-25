@@ -1,0 +1,728 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: white;
+}
+body{
+	width: 100%;
+	height: auto;
+	background:#303966;
+}
+a{
+	text-decoration: none;
+	color:currentColor;
+}
+
+/*header*/
+
+header{
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	background: darkblue;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+	row-gap: 20px;
+}
+#top{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	column-gap:20px;
+	color:white;
+}
+#top figure{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background: url(Fotos/pic_top.jpg);
+	background-size:cover;
+	background-position: center;
+	border: 2px solid black;
+}
+#navigation{
+	width: 100%;
+	height: auto;
+	background:#560591;
+	padding: 10px;
+	border: solid 2px black;
+}
+#navigation nav{
+	width:100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#navigation nav ul{
+	display:flex;
+	list-style: none;
+	column-gap: 40px;
+}
+#navigation nav ul li a{
+	font-size:1.1em;
+	text-transform:uppercase;
+	color: white;
+}
+#navigation nav ul li a:hover{
+	color:gold; 
+}
+#navigation nav ul li a span{ 
+	color:yellow; 
+}
+
+/*Written works*/
+
+#works-container{
+	width: 100%;
+	height: auto;
+	background: #180161;
+	display: flex;
+	justify-content: flex-start;
+}
+#sidebar{
+	width: 190px;
+	height: auto;
+	border-right:2px solid black;
+	background: #110147;
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 5px;
+	transition: all 0.4s;
+}
+#hide-filters{
+	position: absolute;
+	left:220px;
+	font-size:0.8em;
+	display: none;
+}
+#hide-filters:hover{
+	cursor: pointer;
+}
+#sidebar h5{
+	text-align: center;
+	width:100%;
+	font-size: 1.5em;
+	padding: 7px;
+	border-bottom: solid 2px black;
+}
+.filter-types{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 8px;
+	row-gap: 2px;
+}
+.filter-types h6{
+font-size: 1em;
+margin-bottom: 8px;
+}
+.filter-types div{
+	display: block;
+	margin-left:10px;
+}
+.filter-types div input:checked{
+	background: yellow;
+}
+#Submit{
+	margin: 10px;
+	height: 20px;
+	width: 60px;
+}
+#hidden-filters{
+	width: 40px;
+	height: 40px;
+	margin-top: 15px;
+	margin-left: 50px;
+	display: none;
+}
+#hidden-filters:hover{
+	cursor: pointer;
+}
+.icon-menu{
+	width: 40px;
+	height: 40px;
+}
+#works{
+	width: calc(100% - 190px);
+	height: auto;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	row-gap: 20px;
+}
+.work{
+	width: 97%;
+	height: auto;
+	min-height: 90px;
+	padding: 10px;
+	background: aliceblue;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.work-des{
+	display: flex;
+	flex-direction: column;
+}
+.work-des h3{
+	color:black;
+	text-decoration: underline;
+}
+.work-des p{
+	padding: 10px;
+}
+.work-blog{
+	margin-left: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	font-size: 0.9em;
+}
+.work-blog a{
+	color:#666;
+}
+.work-blog a:hover{
+	color:black;
+}
+
+/*work text*/
+
+#text-container{
+	background: white;
+	color: black;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-right:2px solid black;
+	border-left:2px solid black;
+}
+.work-text{
+	max-width: 1000px;
+}
+.vertical{
+	max-width: 800px;
+  font-family: "EB Garamond";
+  font-size: 1.2em;
+  padding-top: 50px;
+  text-align: justify;
+}
+.end{
+	padding: 400px 0;
+}
+.dramatic{
+	width: 100%;
+	height: 500px;
+}
+.work-text h2{
+ text-align: center;
+ font-size: 2.3em;
+ margin-bottom: 50px;
+}
+.work-text h3{
+	text-align: center;
+	font-size: 1.8em;
+	margin-bottom: 60px;
+}
+.work-text h4{
+	font-size: 1.15em;
+}
+.work-text p{
+	margin-bottom: 60px;
+	font-size: 1.15em;
+}
+#blue{
+	color:blue;
+}
+#red{
+	color:red;
+}
+#quote{
+	text-align: right;
+}
+#move-right{
+	margin-left:55px;
+}
+#chapters{
+	width: 85%;
+	display: flex;
+	justify-content: space-between;
+}
+.chapter-btn{
+	width:100px;
+	height:40px;
+	background: lightyellow;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-decoration:none;
+	color:black;
+	font-size:1em;
+	border:1px solid black;
+	border-radius: 5px;
+}
+
+.chapter-btn.disabled{
+	background: #ccc;
+	color:#666;
+	pointer-events: none;
+	cursor: default;
+}
+#subir{
+	width: 40px;
+	height: 40px;
+	background-size:cover;
+	border-radius: 50%;
+	position:fixed;
+	bottom:30px;
+	right:30px;
+}
+.icon-arrow-up{
+	fill:black;
+	width: 40px;
+	height: 40px;
+}
+
+/*work blog*/
+
+#blog-container{
+	background: #180161;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+}
+#work-blog{
+	color: white;
+	width: 1100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#work-blog h3{
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+#work-blog h4{
+	font-size: 1.1em;
+}
+#work-blog p{
+	margin: 30px;
+	font-size: 1.2em;
+}
+#work-blog figure{
+	border: 2px solid black;
+}
+
+/*Viele blog*/
+
+#Viele-pic1{
+	width: 500px;
+	height: 500px;
+	background: url(Fotos/Viele-sagen.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Amigos blog*/
+
+#Amigos-pic1{
+	width: 500px;
+	height: 300px;
+	background: url(Fotos/Omori-bed.jpg.webp);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Internet blog*/
+
+#Internet-pic1{
+	width: 500px;
+	height: 400px;
+	background: url(Fotos/Internet-pic1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+	#Internet-pic2{
+	width: 500px;
+	height: 400px;
+	background: url(Fotos/Internet-pic2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+	#Internet-pic3{
+	width: 400px;
+	height: 400px;
+	background: url(Fotos/Internet-pic3.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Brave blog*/
+
+	#Brave-pic1{
+	width: 400px;
+	height: 220px;
+	background: url(Fotos/Brave-pic1.webp);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Arts and crafts*/
+
+#works-container-arts{
+	width: 100%;
+	height: auto;
+	background: #180161;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#sidebar-arts{
+	width: 400px;
+	height: 40px;
+	border:2px solid black;
+	border-top:none;
+	background: #110147;
+	color:white;
+	display: flex;
+	align-items: center;
+}
+#sidebar-arts h5{
+	text-align: center;
+	width: 130px;
+	height:100%;
+	font-size: 1.5em;
+	margin-top: 10px;
+}
+.filter-types-arts{
+	width: calc(100% - 130px);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-left: solid 2px black;
+}
+.filter-types-arts h6{
+	font-size: 1.1em;
+}
+.filter-types-arts h6:hover{
+	cursor: pointer;
+}
+#creations{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	column-gap:20px;
+}
+.creation{
+	width: 200px;
+	height: 250px;
+	background: aliceblue;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+}
+.creation:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.75);
+}
+.img-creation{
+	width: 175px;
+	height: 175px;
+	border: 1px solid black;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
+}
+.Lain-hat{
+	background-image: url(Fotos/Lain-hat.jpg);
+}
+.Rei-bands{
+	background-image: url(Fotos/Rei-bands.jpg);
+}
+.Copland{
+	background-image: url(Fotos/Copland.jpg);
+}
+.Whale{
+	background-image: url(Fotos/Whale.jpg);
+}
+.Pet{
+	background-image: url(Fotos/Pet-nolight.jpg);
+}
+.Pravada{
+	background-image: url(Fotos/Pravada-second.jpg);
+}
+.Erika{
+	background-image: url(Fotos/Erika.jpg);
+}
+.Katyusha{
+	background-image: url(Fotos/Katyusha.jpg);
+}
+.NineSols{
+	background-image: url(Fotos/NineSols.jpg);
+}
+.Red-panda{
+	background-image: url(Fotos/Red-panda.jpg);
+}
+.Skull{
+	background-image: url(Fotos/Skull.jpg);
+}
+.Whale-wall{
+	background-image: url(Fotos/Whale-Wall.jpg);
+}
+
+/*Lain-hat*/
+
+#Lain-hat-pic1{
+	width: 500px;
+	height: 450px;
+	background: url(Fotos/Lain-anime-hat.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Rei bands*/
+
+#Rei-bands-pic1{
+	width: 500px;
+	height: 450px;
+	background: url(Fotos/Rei_Ayanami.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Copland keychain*/
+
+#Copland-pic1{
+	width: 500px;
+	height: 350px;
+	background: url(Fotos/Copland-pic1.png);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Cool Whale*/
+
+#Cool-Whale-pic1{
+	width: 500px;
+	height: 500px;
+	background: url(Fotos/Whale.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Pet box*/
+
+#Pet-box-pic1{
+	width: 500px;
+	height: 500px;
+	background: url(Fotos/Pet-light.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Pravada*/
+
+#Pravada-pic1{
+	width: 500px;
+	height: 500px;
+	background: url(Fotos/Pravada-first.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Erika*/
+
+#Erika-pic1{
+	width: 500px;
+	height: 400px;
+	background: url(Fotos/Erika-pic1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Katyusha*/
+
+#Katyusha-pic1{
+	width: 500px;
+	height: 400px;
+	background: url(Fotos/Katyusha-pic1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*NineSols*/
+
+#NineSols-pic1{
+	width: 500px;
+	height: 350px;
+	background: url(Fotos/NineSols-pic1.avif);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Red panda*/
+
+#Red-panda-pic1{
+	width: 500px;
+	height: 350px;
+	background: url(Fotos/Red-panda.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Skull*/
+
+#Skull-pic1{
+	width: 500px;
+	height: 700px;
+	background: url(Fotos/Skull.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*Whale wall*/
+
+#Whale-wall-pic1{
+	width: 500px;
+	height: 300px;
+	background: url(Fotos/Whale-Wall.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*About*/
+
+#card-container{
+	width: 100%;
+	height: auto;
+	background: #180161;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+}
+
+#about-card{
+	width: 410px;
+	height: auto;
+	padding: 30px;
+	background:aliceblue;
+	border:2px solid black;
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+}
+
+/*footer*/
+
+footer{
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	background: #6A17A6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	row-gap: 20px;
+	color:white;
+	border: 2px solid black;
+}
+footer h6{
+	font-size: 1.3em;
+}
+#contributers{
+	display: flex;
+	justify-content: center;
+	column-gap: 20px;
+}
+.contributer{
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+.contributer a{
+	display: flex;
+	align-items: center;
+}
+
+/*responsive*/
+
+@media screen and (max-width:600px){
+	/*header*/
+	#top{
+		padding: 20px;
+	}
+	#top figure{
+		display: none;
+	}
+	/*written works*/
+	#works-container{
+		flex-direction: column;
+	}
+	#sidebar{
+		width: 250px;
+		position: absolute;
+		left:-300px;
+		border-bottom: solid 2px black;
+	}
+	#hide-filters{
+		display: block;
+	}
+	#hidden-filters{
+		display: block;
+	}
+	#works{
+		width: 100%;
+		padding: 25px;
+	}
+	.work{
+		width: 100%;
+	}
+	/*blog*/
+	#work-blog figure{
+		width: 300px;
+		height: 300px;
+	}
+	/*footer*/
+	footer{
+		padding: 20px;
+		row-gap: 20px;
+	}
+	footer #contributers{
+		flex-direction: column;
+		align-items: center;
+		row-gap: 10px;
+}
